@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Nunito:ital,wght@1,300&display=swap');
+/* Container */
+.container {
+    min-width: unset;
+    min-height: 95vh;
+    color: black;
+    margin: 0 auto;
+    padding: 25px 50px;
+    border-radius: 5px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    background: rgba(rgb(213, 18, 18), rgb(14, 204, 14), rgb(11, 11, 173), 0.85);
+}
+.input-container {
+    position: relative;
+    top: 20px;
+}
+
+input {
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgb(18, 224, 231);
+    border-radius: 20px;
+    background: rgb(239, 235, 235);
+}
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Button */
+button {
+    color: rgb(173, 173, 195);
+    background-color: green;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+
+
+} 
+button:hover {
+    filter: brightness(110%)
+
+}
+
+/* CountDown */
+ul {
+    margin-left: -45px;
+}
+
+li {
+    display: inline-block;
+    font-size: 30px;
+    list-style-type: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+li span {
+    display: block;
+    font-size: 80px;
+    text-align: center;
+
+}
+
+/* Complete */
+.complete {
+    position: relative;
+    top: 60px;
+}
+
+.complete-title {
+    animation: complete 4s infinite;
+
+}
+
+@keyframes complete {
+    0% {
+        color: rgb(47, 47, 171);
+    }
+    25%{
+        color: rgb(190, 250, 12);
+    }
+    50% {
+        color: rgb(222, 123, 9);
+        transform: scale(1.5);
+    }
+    75% {
+        color: rgb(171, 47, 99);
+    }
+    100% {
+        color: rgb(5, 214, 51);
+    }
+}
